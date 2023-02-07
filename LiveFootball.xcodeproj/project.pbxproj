@@ -26,6 +26,8 @@
 		A189B9A72980CE40002E8687 /* output.json in Resources */ = {isa = PBXBuildFile; fileRef = A189B9A62980CE40002E8687 /* output.json */; };
 		A189B9AA2980CF1B002E8687 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A189B9A92980CF1B002E8687 /* Bundle-Decodable.swift */; };
 		A189B9AD2980D450002E8687 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A189B9AC2980D450002E8687 /* Kingfisher */; };
+		A1B8387629919568001D34DE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8387529919568001D34DE /* Cache.swift */; };
+		A1B83878299195A7001D34DE /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B83877299195A7001D34DE /* CacheModel.swift */; };
 		A1BE3FC32984AAED00107B5A /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE3FC22984AAED00107B5A /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		A189B9A42980CCB8002E8687 /* ClubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubModel.swift; sourceTree = "<group>"; };
 		A189B9A62980CE40002E8687 /* output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
 		A189B9A92980CF1B002E8687 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		A1B8387529919568001D34DE /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		A1B83877299195A7001D34DE /* CacheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheModel.swift; sourceTree = "<group>"; };
 		A1BE3FC22984AAED00107B5A /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,9 +96,9 @@
 		A189B9832980C1CE002E8687 /* LiveFootball */ = {
 			isa = PBXGroup;
 			children = (
-				A1A411BA2983442B00463DC2 /* APIClient */,
 				A189B9A82980CF06002E8687 /* Extensions */,
 				A189B9932980C31D002E8687 /* Models */,
+				A1BE3FC42984DB9300107B5A /* Services */,
 				A14C9C4D2981EBEB00A31BE6 /* Shared */,
 				A189B9922980C317002E8687 /* Views */,
 				A189B9842980C1CE002E8687 /* LiveFootballApp.swift */,
@@ -130,6 +134,7 @@
 			children = (
 				A189B9A42980CCB8002E8687 /* ClubModel.swift */,
 				A1BE3FC22984AAED00107B5A /* ResponseModel.swift */,
+				A1B83877299195A7001D34DE /* CacheModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +189,23 @@
 				A18392CF2983447300BC25BF /* Endpoint.swift */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		A1BE3FC42984DB9300107B5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1A411BA2983442B00463DC2 /* APIClient */,
+				A1BE3FC52984DBAA00107B5A /* Cache */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1BE3FC52984DBAA00107B5A /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8387529919568001D34DE /* Cache.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +294,14 @@
 				A189B9872980C1CE002E8687 /* ContentView.swift in Sources */,
 				A189B9982980C35A002E8687 /* HomeViewViewModel.swift in Sources */,
 				A189B9A12980C9F0002E8687 /* EditFavoritesViewModel.swift in Sources */,
+				A1B8387629919568001D34DE /* Cache.swift in Sources */,
 				A14C9C4F2981EC0C00A31BE6 /* CircleButtonView.swift in Sources */,
 				A189B9852980C1CE002E8687 /* LiveFootballApp.swift in Sources */,
 				A189B9AA2980CF1B002E8687 /* Bundle-Decodable.swift in Sources */,
 				A18392CE2983446D00BC25BF /* Request.swift in Sources */,
 				A189B9A32980C9FA002E8687 /* EditFavoritesView.swift in Sources */,
 				A1BE3FC32984AAED00107B5A /* ResponseModel.swift in Sources */,
+				A1B83878299195A7001D34DE /* CacheModel.swift in Sources */,
 				A189B99E2980C64C002E8687 /* FavoritesViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

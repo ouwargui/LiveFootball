@@ -8,10 +8,6 @@
 import Foundation
 
 final class Request {
-  /*
-   baseUrl: https://v3.football.api-sports.io/
-   */
-  
   private enum Constants {
     static let baseUrl = "https://v3.football.api-sports.io"
     static let httpMethod = "GET"

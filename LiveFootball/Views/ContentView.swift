@@ -13,9 +13,6 @@ struct ContentView: View {
   var body: some View {
     HomeView()
       .environmentObject(appContext)
-      .onAppear {
-        print(appContext.favoriteTeams[0].team.name)
-      }
   }
 }
 

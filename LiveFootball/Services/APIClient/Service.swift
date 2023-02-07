@@ -24,12 +24,12 @@ final class Service {
     guard let urlRequest = self.request(from: request) else {
       throw ServiceError.failedToCreateRequest
     }
-    
+
     do {
       let (data, _) = try await URLSession.shared.data(for: urlRequest)
       let response = try JSONDecoder().decode(T.self, from: data)
       return response
-    } catch(let error) {
+    } catch {
       throw error
     }
   }
