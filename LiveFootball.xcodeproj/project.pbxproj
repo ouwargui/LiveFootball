@@ -28,7 +28,10 @@
 		A189B9AD2980D450002E8687 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A189B9AC2980D450002E8687 /* Kingfisher */; };
 		A1B8387629919568001D34DE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8387529919568001D34DE /* Cache.swift */; };
 		A1B83878299195A7001D34DE /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B83877299195A7001D34DE /* CacheModel.swift */; };
+		A1B89AC029A075D700B89E0F /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89ABF29A075D700B89E0F /* Routes.swift */; };
+		A1B89AC229A076B700B89E0F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B89AC129A076B700B89E0F /* Router.swift */; };
 		A1BE3FC32984AAED00107B5A /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE3FC22984AAED00107B5A /* ResponseModel.swift */; };
+		A1F2CEF92995E1520023E6DB /* FavoriteClubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2CEF82995E1520023E6DB /* FavoriteClubView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +56,10 @@
 		A189B9A92980CF1B002E8687 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		A1B8387529919568001D34DE /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A1B83877299195A7001D34DE /* CacheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheModel.swift; sourceTree = "<group>"; };
+		A1B89ABF29A075D700B89E0F /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		A1B89AC129A076B700B89E0F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A1BE3FC22984AAED00107B5A /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		A1F2CEF82995E1520023E6DB /* FavoriteClubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteClubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			children = (
 				A14C9C4E2981EC0C00A31BE6 /* CircleButtonView.swift */,
 				A14C9C502981FA5B00A31BE6 /* AppContext.swift */,
+				A1B89AC129A076B700B89E0F /* Router.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 		A189B9922980C317002E8687 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1F2CEF72995E13A0023E6DB /* FavoriteClubView */,
 				A189B99F2980C9E5002E8687 /* EditFavoritesView */,
 				A189B99A2980C62D002E8687 /* FavoritesView */,
 				A189B9992980C625002E8687 /* GamesView */,
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A189B9A42980CCB8002E8687 /* ClubModel.swift */,
+				A1B89ABF29A075D700B89E0F /* Routes.swift */,
 				A1BE3FC22984AAED00107B5A /* ResponseModel.swift */,
 				A1B83877299195A7001D34DE /* CacheModel.swift */,
 			);
@@ -206,6 +215,14 @@
 				A1B8387529919568001D34DE /* Cache.swift */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		A1F2CEF72995E13A0023E6DB /* FavoriteClubView */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2CEF82995E1520023E6DB /* FavoriteClubView.swift */,
+			);
+			path = FavoriteClubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,10 +309,13 @@
 				A18392D02983447300BC25BF /* Endpoint.swift in Sources */,
 				A189B9A52980CCB8002E8687 /* ClubModel.swift in Sources */,
 				A189B9872980C1CE002E8687 /* ContentView.swift in Sources */,
+				A1F2CEF92995E1520023E6DB /* FavoriteClubView.swift in Sources */,
 				A189B9982980C35A002E8687 /* HomeViewViewModel.swift in Sources */,
 				A189B9A12980C9F0002E8687 /* EditFavoritesViewModel.swift in Sources */,
+				A1B89AC229A076B700B89E0F /* Router.swift in Sources */,
 				A1B8387629919568001D34DE /* Cache.swift in Sources */,
 				A14C9C4F2981EC0C00A31BE6 /* CircleButtonView.swift in Sources */,
+				A1B89AC029A075D700B89E0F /* Routes.swift in Sources */,
 				A189B9852980C1CE002E8687 /* LiveFootballApp.swift in Sources */,
 				A189B9AA2980CF1B002E8687 /* Bundle-Decodable.swift in Sources */,
 				A18392CE2983446D00BC25BF /* Request.swift in Sources */,

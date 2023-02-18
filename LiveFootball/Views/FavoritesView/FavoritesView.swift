@@ -8,22 +8,38 @@
 import SwiftUI
 
 struct FavoritesView: View {
+  @EnvironmentObject var appContext: AppContext
+  @EnvironmentObject var router: Router
+
+  @State private var height: CGFloat = 0
+
   var body: some View {
     NavigationStack {
-      Text("Hello world!")
-        .toolbar {
-          ToolbarItem(placement: .navigationBarTrailing) {
-            NavigationLink(destination: EditFavoritesView()) {
-              Text("Edit favorites")
-            }
+      ScrollView {
+        TabView {
+          ForEach(appContext.favoriteTeams) { club in
+            FavoriteClubView(club: club, height: $height)
           }
         }
+        .tabViewStyle(.page(indexDisplayMode: .always))
+        .frame(height: height)
+      }
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          NavigationLink(value: Routes.editFavorites) {
+            Text("Edit Favorites")
+          }
+        }
+      }
+      .navigationDestination(for: Routes.self) { $0 }
     }
   }
 }
 
 struct FavoritesView_Previews: PreviewProvider {
   static var previews: some View {
-    FavoritesView()
+    ContentView()
+      .environmentObject(AppContext())
+      .environmentObject(Router())
   }
 }
